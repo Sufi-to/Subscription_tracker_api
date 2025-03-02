@@ -68,15 +68,16 @@ EMAIL_PASSWORD=
 
 ### Authentication
 
-- **Register a user**: `POST /api/auth/register`
-- **Login a user**: `POST /api/auth/login`
+- **Register a user**: `POST /api/v1/auth/sign-up`
+- **Login a user**: `POST /api/v1/auth/sign-in`
+- **Logout a user**: `POST /api/v1/auth/sign-out`
 
 ### Subscription Management
 
-- **Get all subscriptions**: `GET /api/subscriptions`
-- **Create a subscription**: `POST /api/subscriptions`
-- **Update a subscription**: `PUT /api/subscriptions/:id`
-- **Delete a subscription**: `DELETE /api/subscriptions/:id`
+- **Get all subscriptions for a user**: `GET /api/v1/subscriptions/user/:id`
+- **Create a subscription**: `POST /api/v1/subscriptions`
+- **Update a subscription**: `PUT /api/v1/subscriptions/:id`
+- **Delete a subscription**: `DELETE /api/v1/subscriptions/:id`
 
 ### Admin & Security
 
